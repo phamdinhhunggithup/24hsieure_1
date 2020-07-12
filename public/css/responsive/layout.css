@@ -1,0 +1,86 @@
+@media screen and (min-width: 425px) {
+  #header .blog-support {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #header .support__item[data-support="cart"] {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
+    max-width: 45%;
+  }
+  #header .list__support-option {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 5%;
+            flex: 0 0 5%;
+    max-width: 5%;
+  }
+  #header #respon__menu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 876px) {
+  #header .blog-support {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header .blog-support {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #header .list__support-option {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+  #header #respon__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #header .blog-support {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  #header .support__item[data-support="cart"] {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+  #header .support__item[data-support="cart"] .support__target {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  #header .list__support-option {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

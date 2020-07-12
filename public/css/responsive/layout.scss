@@ -1,0 +1,111 @@
+$res_320  : "screen and (min-width: 320px)";
+$res_375  : "screen and (min-width: 375px)";
+$res_528  : "";
+$res_425  : "screen and (min-width: 425px)";
+$res_768  : "screen and (min-width: 768px)";
+$res_876  : "screen and (min-width: 876px)";
+$res_992  : "screen and (min-width: 992px)";
+$res_1024 : "screen and (min-width: 1024px)";
+$res_1200 : "screen and (min-width: 1200px)";
+
+@mixin responsive_320() {
+    @media #{$res_320} {
+        @content;
+    }
+}
+@mixin responsive_375() {
+    @media #{$res_375} {
+        @content;
+    }
+}
+@mixin responsive_425() {
+    @media #{$res_425} {
+        @content;
+    }
+}
+@mixin responsive_768() {
+    @media #{$res_768} {
+        @content;
+    }
+}
+@mixin responsive_876() {
+    @media #{$res_876} {
+        @content;
+    }
+}
+@mixin responsive_992() {
+    @media #{$res_992} {
+        @content;
+    }
+}
+@mixin responsive_1024() {
+    @media #{$res_1024} {
+        @content;
+    }
+}
+@mixin responsive_1200() {
+    @media #{$res_1200} {
+        @content;
+    }
+}
+
+@include responsive_425{
+    #header {
+        .blog-support {
+            justify-content: flex-end;
+        }
+        .support__item[data-support="cart"] {
+            transition: all .5s;
+            flex: 0 0 45%;
+            max-width: 45%;
+        }
+        .list__support-option {
+            transition: all .5s;
+            flex: 0 0 5%;
+            max-width: 5%;
+        }
+        #respon__menu{display: block;}
+    }
+}
+@include responsive_876 {
+    #header {
+        .blog-support {
+            justify-content: center;
+        }
+        .blog-support {
+            flex: 0 0 80%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .list__support-option {
+            transition: all .5s;
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+        #respon__menu{display: none;}
+    }
+}
+@include responsive_1200{
+    // ===== header ===== //
+    #header {
+        .blog-support {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 15px;
+        }
+        .support__item[data-support="cart"] {
+            transition: all .5s;
+            flex: 0 0 25%;
+            max-width: 25%;
+            .support__target {
+                justify-content: center;
+                transition: all .5s;
+            }
+        }
+        .list__support-option {
+            transition: all .5s;
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+    }
+}
